@@ -6,14 +6,10 @@
     <h1>Video Streaming Demonstration</h1>
     <div>
       <div style="float:left; margin-right: 10px;" id="image">
-        <video>
-          <source src="{{ url_for('video_feed_cam1') }}" type="video/mp4">
-        </video>
+        <img src="{{ url_for('video_feed_cam1') }}">
       </div>
       <div style="float:left; margin-left: 10px;" id="image">
-        <video>
-          <source src="{{ url_for('video_feed_cam1') }}" type="video/mp4">
-        </video>
+        <img src="{{ url_for('video_feed_cam2') }}">
       </div>
     </div>
   </body>

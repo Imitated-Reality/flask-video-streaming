@@ -7,8 +7,8 @@ class Camera(object):
 
     def __init__(self, port):
         self.camera = cv2.VideoCapture(port)
-        #self.camera.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, 1000.0)
-        #self.camera.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, 5000.0)
+        self.camera.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, 500.0)
+        self.camera.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, 500.0)
 
     def get_frame(self):
         ret, frame = self.camera.read()
